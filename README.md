@@ -6,7 +6,7 @@ This the front end part of this project which is a react vite app in this projec
 
 ## Deployment
 
-[Click Here](https://vercel.com/ajit-gyandev-holkars-projects/rotten-tomatoes) to see my glassdoor website.
+[Click Here](https://vercel.com/ajit-gyandev-holkars-projects/rotten-tomatoes) to see my Rotten tomato website.
 
 ## Run Locally
 
