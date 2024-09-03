@@ -10,6 +10,8 @@ import YouTube from 'react-youtube';
 import { add_to_list } from '../store/WatchlistSlice';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
+import redtomato from '../assets/redtomato.png';
+import greenlogo from '../assets/greenlogo.png';
 
 //import './Movies.css';
 
@@ -135,7 +137,7 @@ const Movies = () => {
               onClick={() => handleMovieClick(movie.id)} // Click handler to fetch and show trailer
             />
             <div className='flex items-center gap-2'>
-              <img src={freshlogo} alt="Fresh Logo" className='w-[20px] h-[20px] rounded' />
+              <img src={movie.vote_count>600 ?redtomato : greenlogo} alt="Fresh Logo" className='w-[20px] h-[20px] rounded' />
               <IoPlayCircleOutline size={20} />
               <p>{movie.vote_count}</p>
             </div>
