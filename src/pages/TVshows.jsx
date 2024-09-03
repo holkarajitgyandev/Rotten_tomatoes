@@ -127,7 +127,7 @@ const dispatch=useDispatch();
               <p>{show.vote_count}</p>
             </div>
             <p>{show.name}</p>
-            <button onClick={()=>handleaddshow(show)} className='flex items-center justify-center gap-2 border border-black rounded-md'>
+            <button onClick={()=>handleaddshow(show)} className='flex items-center justify-center gap-2 border border-black rounded-md hover:bg-orange-400  transform active:scale-95 transition-transform duration-200 ease-in-out'>
               <CiCirclePlus size={20} /> WATCHLIST
             </button>
           </div>
