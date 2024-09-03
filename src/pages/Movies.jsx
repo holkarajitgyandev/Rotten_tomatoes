@@ -141,7 +141,7 @@ const Movies = () => {
             </div>
             <p>{movie.title}</p>
             <button onClick={()=>handleaddtowatchlist(movie)}
-            className='flex items-center justify-center gap-2 border border-black rounded-md'>
+            className='flex items-center justify-center gap-2 border border-black rounded-md hover:bg-orange-400  transform active:scale-95 transition-transform duration-200 ease-in-out'>
               <CiCirclePlus size={20} /> WATCHLIST
             </button>
           </div>
