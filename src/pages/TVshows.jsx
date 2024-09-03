@@ -9,6 +9,8 @@ import { API_key, Base_url, image_baseurl } from '../api/axios';
 import YouTube from 'react-youtube'; 
 import { useDispatch } from 'react-redux';
 import { add_show } from '../store/tvshowslicer';
+import colourpopcorn from '../assets/colourpopcorn.png';
+import tiltedpopcorn from '../assets/tiltedpopcorn.png';
 
 
 const TVshows = () => {
@@ -122,7 +124,7 @@ const dispatch=useDispatch();
               onClick={() => handleShowClick(show.id)} // Click handler to fetch and show trailer
             />
             <div className='flex items-center gap-2'>
-              <img src={freshlogo} alt="Fresh Logo" className='w-[20px] h-[20px] rounded' />
+              <img src={show.vote_count>1000? colourpopcorn :tiltedpopcorn</img>} alt="Fresh Logo" className='w-[20px] h-[20px] rounded' />
               <IoPlayCircleOutline size={20} />
               <p>{show.vote_count}</p>
             </div>
